@@ -3,38 +3,41 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Aurèle Oulès</title>
+    <title>Nuf</title>
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link href="libs/flatUI/dist/css/flat-ui.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="libs/CSS3-Hexagon-Buttons/assets/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="libs/CSS3-Hexagon-Buttons/assets/css/hexagons.css">
-    <link href="css/style.css" rel="stylesheet"> <!-- PERSONNAL CSS STYLESHEET -->
+    <link rel="stylesheet" type="text/css" href="libs/twemoji-awesome/twemoji-awesome.css">
+
+    <link href="css/style.css" rel="stylesheet">
+    <!-- PERSONNAL CSS STYLESHEET -->
 
     <!--JS-->
     <script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="libs/footer-reveal/footer-reveal.js"></script>
     <script src="scripts.js"></script>
     <script src="app.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function() {});
-    </script>
+
 </head>
 <!-- HEADER OF THE PAGE -->
 <header>
-    <div ng-include="'ng-header.html'" </div>
+    <div class="fixedNavBar" ng-include="'ng-header.html'" </div>
 </header>
 
 
 <!-- BODY OF THE PAGE -->
+
 <body ng-controller="MainCtrl" class="bg-template">
     <div ng-view></div>
-</body>
 
+    <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+</body>
 
 
 </html>

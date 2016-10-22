@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-
 <head>
-    <link href="libs/flatUI/dist/css/flat-ui.css" rel="stylesheet">
+    <title>Home</title>
     <script type="text/javascript">
         //!\\ Autostart script //!\\
         $(document).ready(function() {
@@ -12,12 +11,12 @@
     </script>
 </head>
 
-<div class="bg-template partial homePage">
-    <div class="paraTitle">
+<div class="partial">
+    <div class="paraTitle srIntroTitle">
         <h1>Introduction</h1>
     </div>
     <center>
-        <div class="paragraph">
+        <div class="paragraph srIntro">
             <p align="center">
                 My name is Aurèle, I'm 15 years old and I live in a beautiful country filled with baguettes! <i class="twa twa-fr"></i> I am still studying in highschool. <i class="twa twa-wink"></i> Since the age of 10, I've always been passionated about
                 computers and I was lucky enough to have <i>geeky</i> family, this is the reason I've become the developer I am today. First I learnt to program some Minecraft plugins in <b>Java</b> for fun then it became an addiction! <i class="twa twa-computer"></i>                Since that time, my goal is to become <b>The Best Developer Ever</b>!
@@ -37,7 +36,7 @@
     </center>
 
 
-    <div class="paraTitle">
+    <div class="paraTitle srSkillsTitle">
         <h1>Skills <i class="twa twa-smirk"></i></h1>
     </div>
     <center>
@@ -157,11 +156,11 @@
 
         </ul>
     </center>
-    <div class="paraTitle">
+    <div class="paraTitle srProjectsTitle">
         <h1>Recent Projects</h1>
     </div>
 
-    <center>
+    <center class="srProjects">
         <div class="paragraph">
             <p align="justify">
                 <a href="https://github.com/aureleoules/firelink-web"><b>FireLink (Web)</b> <i class="twa twa-computer"></i></a>
@@ -185,14 +184,18 @@
 
 <script>
     window.sr = ScrollReveal({
-        duration: 750,
+        duration: 700,
         reset: true,
         scale: 0.75,
         opacity: 0,
     });
-    sr.reveal('.paraTitle', 50);
-    sr.reveal('.paragraph', 50);
+    sr.reveal('.srProjects', 50);
+    sr.reveal('.srProjectsTitle', 50);
 
+    sr.reveal('.srIntro', 50);
+    sr.reveal('.srIntroTitle', 50);
+
+    sr.reveal('.srSkillsTitle', 50);
     sr.reveal('#HTML', 50);
     sr.reveal('#PHP', 50);
     sr.reveal('#CSS', 50);

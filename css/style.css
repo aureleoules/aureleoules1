@@ -5,6 +5,8 @@
 .partial {
     padding-left: 16px;
     padding-right: 16px;
+    vertical-align: middle;
+    padding-top: 70px;
 }
 
 .ninja {
@@ -16,38 +18,17 @@
 }
 
 .paragraph {
-    width: 60%;
-    margin-bottom: 100px;
-}
-
-.homePage {
-    vertical-align: middle;
-    padding-top: 60px;
+    width: 55%;
 }
 
 .fixedNavBar {
     position: fixed;
     width: 100%;
-    z-index:999;
-}
-
-.mySkillsleft {
-    margin-left: 15%;
-    width: 30%;
-    float: left;
-}
-
-.mySkillsmiddle {
-    width: 30%;
-}
-
-.mySkillsright {
-    margin-right: 15%;
-    width: 30%;
-    float: right;
+    z-index: 999;
 }
 
 .paraTitle {
+    margin-top: 75px;
     text-align: center;
 }
 
@@ -55,20 +36,44 @@
     border-width: 2px;
     border-style: solid;
     border-color: rgba(#496078, 0.75);
-    display:inline-block;
-    width: 30%;
-    height: 35%;
-    min-width: 30%;
-    min-height: 35%;
-    max-width: 30%;
-    max-height: 35%;
+    display: inline-block;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    min-width: 100px;
 }
 
 .borderedCss {
     border-width: 2px;
     border-style: solid;
     border-color: rgba(#496078, 0.75);
-    display:inline-block;
+    display: inline-block;
     width: 7%;
     height: 35%;
+}
+
+ul.skills {
+    width: 55%;
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding: 5px;
+}
+
+li {
+    line-height: 1.5em;
+    float: left;
+    display: inline;
+}
+
+#double li {
+    width: 45%;
+}
+
+li.odd {
+    float: left;
+}
+
+li.even {
+    float: right;
 }

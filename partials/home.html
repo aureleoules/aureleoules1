@@ -1,6 +1,7 @@
+<!DOCTYPE html>
+
 <head>
     <link href="libs/flatUI/dist/css/flat-ui.css" rel="stylesheet">
-
     <script type="text/javascript">
         //!\\ Autostart script //!\\
         $(document).ready(function() {
@@ -11,21 +12,16 @@
     </script>
 </head>
 
-
-<div class='bg-template partial homePage'>
-    <div class="ninja"><small class="ninja">hey you</small></div>
-
-
+<div class="bg-template partial homePage">
     <div class="paraTitle">
-        <h1>Introduction</h1></center>
+        <h1>Introduction</h1>
     </div>
     <center>
-        <section class="paragraph">
-
+        <div class="paragraph">
             <p align="center">
                 My name is Aurèle, I'm 15 years old and I live in a beautiful country filled with baguettes! <i class="twa twa-fr"></i> I am still studying in highschool. <i class="twa twa-wink"></i> Since the age of 10, I've always been passionated about
-                computers. <i class="twa twa-computer"></i>
-                <br>So in the meantime I've learned some programming languages like:
+                computers and I was lucky enough to have <i>geeky</i> family, this is the reason I've become the developer I am today. First I learnt to program some Minecraft plugins in <b>Java</b> for fun then it became an addiction! <i class="twa twa-computer"></i>                Since that time, my goal is to become <b>The Best Developer Ever</b>!
+                <br>In the meantime I've learned some programming languages like:
                 <br>
                 <code data-toggle="tooltip" data-placement="bottom" title="Fluent with it.">Java</code>;
                 <code data-toggle="tooltip" data-placement="bottom" title="Awesome at both.">HTML5 & CSS3</code>;
@@ -37,108 +33,153 @@
                 <br>
                 <b>After Effect</b>, <b>Photoshop</b>, and <b>Illustrator</b>.
             </p>
-        </section>
+        </div>
     </center>
 
-    <div class="skillsContainer">
-        <div class="paraTitle" style="margin-top: 50px;">
-            <h1>Skills <i class="twa twa-smirk"></i></h1>
-        </div>
-        <div class="mySkillsleft">
-            <section id="HTML">
-                <center>
-                    <p class="borderedText">HTML5</p>
-                </center>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 90%;"></div>
-                </div>
-            </section>
 
-            <section id="CSS">
-                <center>
-                    <p class="borderedCss">CSS3</p>
-                </center>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 75%;"></div>
-                </div>
-            </section>
-
-            <section id="JS">
-                <center>
-                    <p class="borderedText">JavaScript</p>
-                </center>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 80%;"></div>
-                </div>
-            </section>
-
-            <section id="VB">
-                <center>
-                    <p class="borderedText">VB.NET</p>
-                </center>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 96%;"></div>
-                </div>
-            </section>
-
-            <section id="Csharp">
-                <center>
-                    <p class="borderedText">C#</p>
-                </center>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 75%;"></div>
-                </div>
-            </section>
-        </div>
-
-
-        <div class="mySkillsright">
-            <section id="PHP">
-                <center>
-                    <p class="borderedText">PHP</p>
-                </center>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 55%;"></div>
-                </div>
-            </section>
-
-            <section id="Java">
-                <center>
-                    <p class="borderedText">Java</p>
-                </center>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 90%;"></div>
-                </div>
-            </section>
-
-            <section id="Python">
-                <center>
-                    <p class="borderedText">Python</p>
-                </center>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 75%;"></div>
-                </div>
-            </section>
-
-            <section id="SQL">
-                <center>
-                    <p class="borderedText">SQL</p>
-                </center>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 65%;"></div>
-                </div>
-            </section>
-
-            <section id="Adobe">
-                <center>
-                    <p class="borderedText">Adobe Suite</p>
-                </center>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 75%;"></div>
-                </div>
-            </section>
-        </div>
+    <div class="paraTitle">
+        <h1>Skills <i class="twa twa-smirk"></i></h1>
     </div>
+    <center>
+        <ul id="double" class="skills">
+            <li class="odd">
+                <section id="HTML">
+                    <center>
+                        <p class="borderedText">HTML5</p>
+                    </center>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </section>
+            </li>
+
+
+
+            <li class="even">
+                <section id="JS">
+                    <center>
+                        <p class="borderedText">JavaScript <span data-toggle="tooltip" data-placement="bottom" title="Angular, Node, JQuery"><i class="fa fa-question"></i></span></p>
+                    </center>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+                </section>
+            </li>
+
+            <li class="odd">
+                <section id="CSS">
+                    <center>
+                        <p data-toggle="tooltip" data-placement="bottom" data-original-title="{{tooltipText}}" ng-click="classCSS='borderedText'; tooltipText='Better isn\'t it?'" ng-class="classCSS" class="borderedCss">CSS3</p>
+                    </center>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 75%;"></div>
+                    </div>
+                </section>
+            </li>
+
+            <li class="even">
+                <section id="VB">
+                    <center>
+                        <p class="borderedText">VB.NET</p>
+                    </center>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 96%;"></div>
+                    </div>
+                </section>
+            </li>
+
+            <li class="odd">
+                <section id="Csharp">
+                    <center>
+                        <p class="borderedText">C#</p>
+                    </center>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 75%;"></div>
+                    </div>
+                </section>
+            </li>
+
+
+            <li class="even">
+                <section id="PHP">
+                    <center>
+                        <p class="borderedText">PHP</p>
+                    </center>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 55%;"></div>
+                    </div>
+                </section>
+            </li>
+
+            <li class="odd">
+                <section id="Java">
+                    <center>
+                        <p class="borderedText">Java</p>
+                    </center>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </section>
+            </li>
+
+            <li class="even">
+                <section id="Python">
+                    <center>
+                        <p class="borderedText">Python</p>
+                    </center>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 75%;"></div>
+                    </div>
+                </section>
+            </li>
+
+            <li class="odd">
+                <section id="SQL">
+                    <center>
+                        <p class="borderedText">SQL</p>
+                    </center>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 65%;"></div>
+                    </div>
+                </section>
+            </li>
+
+            <li class="even">
+                <section id="Adobe">
+                    <center>
+                        <p class="borderedText">Adobe Suite</p>
+                    </center>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 75%;"></div>
+                    </div>
+                </section>
+            </li>
+
+        </ul>
+    </center>
+    <div class="paraTitle">
+        <h1>Recent Projects</h1>
+    </div>
+
+    <center>
+        <div class="paragraph">
+            <p align="justify">
+                <a href="https://github.com/aureleoules/firelink-web"><b>FireLink (Web)</b> <i class="twa twa-computer"></i></a>
+                <a href="https://github.com/aureleoules/firelink-web" target="_blank"><i style="float: right; color: #34495e" class="fa fa-github"></i></a>
+                <br>A simple app which allows you to share web links between your Android Phone and your PC very smoothly through the Internet using <span><a href="https://firebase.google.com/"><b><i>FireBase</i></b></a></span>!
+                <br><br>
+
+                <a href="https://github.com/aureleoules/firelink-app"><b>FireLink (Android)</b><i class="twa twa-iphone"></i></a>
+                <a href="https://github.com/aureleoules/firelink-app" target="_blank"><i style="float: right; color: #34495e" class="fa fa-github"></i></a>
+                <br>FireLink for Android!
+                <br><br>
+
+                <a href="https://github.com/aureleoules/aureleoules"><b>aureleoules</b> <i class="twa twa-globe-with-meridians"></i></a>
+                <a href="https://github.com/aureleoules/aureleoules" target="_blank"><i style="float: right; color: #34495e" class="fa fa-github"></i></a>
+                <br>My personal website.
+            </p>
+        </div>
+    </center>
 </div>
 <!--End of homePageContent -->
 
@@ -148,8 +189,6 @@
         reset: true,
         scale: 0.75,
         opacity: 0,
-
-
     });
     sr.reveal('.paraTitle', 50);
     sr.reveal('.paragraph', 50);

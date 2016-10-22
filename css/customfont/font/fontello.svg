@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2016 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="devrant_icon" unicode="&#xe800;" d="M432-90c-4 4-24 35-45 67-37 57-38 59-60 68-88 36-155 116-183 219-8 30-9 42-9 117 0 80 0 86 11 123 28 102 96 181 187 217 54 22 79 26 167 25 70 0 84-1 115-8 126-32 207-116 241-246 8-30 9-44 9-111 0-66-2-81-9-111-39-152-153-244-316-255l-40-2-4-14c-2-8-6-29-10-47-4-18-10-37-14-42-10-13-32-13-40 0z m101 300c7 7 28 55 72 166 35 87 63 162 63 167 0 13-16 24-29 20-6-1-12-7-15-13-13-25-128-316-128-324 0-7 16-24 24-24 2 0 7 4 13 8z m-104 31c22 13 20 40-4 54-13 8-32 0-41-16-7-14-4-23 11-36 14-12 17-12 34-2z m6 175c13 13 13 26-1 40-18 17-38 14-49-8-6-11-6-13 0-24 7-13 24-23 33-20 3 1 11 6 17 12z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>

@@ -1,5 +1,6 @@
 [submodule "CSS3-Hexagon-Buttons"]
 	path = libs/CSS3-Hexagon-Buttons
+	url = https://github.com/aureleoules/CSS3-Hexagon-Buttons
 [submodule "twemoji-awesome"]
         path = libs/twemoji-awesome
-
+	url = https://github.com/aureleoules/twemoji-awesome

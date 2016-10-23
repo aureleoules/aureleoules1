@@ -16,7 +16,7 @@ app.config(function($routeProvider) {
     when('/home', {
         title: "Home",
         redirectTo: '/home',
-        templateUrl: 'partials/home.html'
+        templateUrl: 'partials/home.html',
     }).
     when('/404', {
         title: "Not Found",
@@ -28,12 +28,18 @@ app.config(function($routeProvider) {
 
 });
 app.controller('MainCtrl', function($scope) {
-    $scope.titlePage = "test";
     $scope.tooltipText = "That's a joke, click to fix.";
+});
+
+app.controller('NavBarCtrl', function($scope, $location) {
+    $scope.isActive = function(viewLocation) { //This function is for the NavBar: Set 'active' class if navbar item is selected.
+        return viewLocation === $location.path();
+    };
 });
 
 app.run(['$rootScope', function($rootScope) {
     $rootScope.$on('$routeChangeSuccess', function(event, current, previous) {
         $rootScope.title = current.$$route.title;
+        
     });
 }]);

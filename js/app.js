@@ -25,7 +25,6 @@ app.config(function($routeProvider) {
     otherwise({
         redirectTo: '/404',
     });
-
 });
 app.controller('MainCtrl', function($scope) {
     $scope.tooltipText = "That's a joke, click to fix.";
@@ -40,6 +39,5 @@ app.controller('NavBarCtrl', function($scope, $location) {
 app.run(['$rootScope', function($rootScope) {
     $rootScope.$on('$routeChangeSuccess', function(event, current, previous) {
         $rootScope.title = current.$$route.title;
-        
     });
 }]);

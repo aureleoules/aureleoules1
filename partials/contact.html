@@ -9,14 +9,14 @@
             <p align="center">
                 Want to get in touch ? <span><i class="twa twa-wink"/></span>
             </p>
-            <form class="form-group" action="./php/mail.php" method="POST">
-                <textarea name="message" rows="6" class="form-control" placeholder="You message here..." style="resize:vertical;" required></textarea>
+            <form id="contactForm" class="form-group" onsubmit="sendEmail();">
+                <textarea id="message" name="message" rows="6" class="form-control" placeholder="You message here..." style="resize:vertical;" required></textarea>
 
                 <div class="input-group" style="margin-top: 10px;">
-                    <input name="email" type="email" class="form-control" placeholder="Email address..." required />
+                    <input id="email" name="email" type="email" class="form-control" placeholder="Email address..." required />
                     <span class="input-group-addon">@</span>
                 </div>
-                <button type="submit" style="margin-top: 10px" class="btn btn-default btn-wide btn-primary">Submit <span><i class="twa twa-ok-hand"/></span></button>
+                <button id="submitBtn" type="submit" style="margin-top: 10px" class="btn btn-default btn-wide btn-primary">Submit <span><i class="twa twa-ok-hand"/></span></button>
             </form>
         </div>
 
@@ -25,6 +25,21 @@
 </div>
 
 <script>
+    function sendEmail() {
+        $.ajax({
+            url: 'http://aureledocs.oules.com/aureleoules/mail.php',
+            type: 'POST',
+            data: {
+                email: $('#email').val(),
+                message: $('#message').val()
+            },
+            success: function(msg) {
+                $("#contactForm").append("<p>Message sent <span><i class='fa fa-check'/></span></p>");
+                $('#submitBtn').prop('disabled', true);
+                $('#submitBtn').removeClass("btn-primary");
+            }
+        });
+    }
     window.sr = ScrollReveal({
         duration: 750,
         reset: true,
